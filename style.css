@@ -1,0 +1,142 @@
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  overflow: scroll;
+}
+body {
+  font-family: "Montserrat";
+  -webkit-transition: background-color 500ms ease-out 200ms;
+  transition: background-color 500ms ease-out 200ms;
+  margin: 0;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+/* header */
+.header {
+  position: fixed;
+  top: -15px;
+  left: 15px;
+}
+/* main content */
+
+.section {
+  height: 100vh;
+  max-width: 100vw;
+  scroll-snap-align: start;
+}
+
+.middle {
+  text-align: center;
+  padding-top: 5em;
+}
+
+.cover img {
+  width: 420px;
+  height: 65%;
+  box-shadow: 10px 10px 10px #3f3f3f45, -5px -3px 10px #3f3f3f45, 0px 10px 10px #3f3f3f45;
+}
+
+.cover p {
+  font-weight: bold;
+}
+
+.cover a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cover a:hover {
+  text-decoration: underline;
+}
+
+#issue3 {
+  background-color: #00c1b5;
+  transition: background-color 0.5s;
+}
+
+#issue2 {
+  background-color: #ff651a;
+  transition: background-color 0.5s;
+}
+
+#issue1 {
+  background-color: #1d3fbb;
+  transition: background-color 0.5s;
+}
+
+/* footer */
+.copyright {
+  font-weight: normal;
+}
+
+.copyright a {
+  color: #131313;
+}
+
+.copyright a:hover {
+  text-decoration: none;
+}
+
+.privacy a {
+  color: #131313;
+}
+
+.privacy a:hover {
+  text-decoration: none;
+}
+
+.footer .contact {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 15px;
+  font-size: 20px;
+}
+
+.footer .description {
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  max-width: 30%;
+  text-align: justify;
+  font-weight: bold;
+}
+
+.menu {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #131313;
+}
+
+.menu li a:hover {
+  text-decoration: underline;
+}
+
+.menu li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+
+.container {
+  display: flex;
+  align-content: stretch;
+  font-weight: bold;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.contact a {
+  color: #131313;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
